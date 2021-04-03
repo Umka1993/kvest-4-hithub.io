@@ -414,51 +414,39 @@ button {
   padding: 20px 20px;
 }
 
-.new__message {
+.border {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#mess {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid black;
   padding: 5px;
-  padding-left: 10px;
-  margin-bottom: 25px;
+  padding-left: 20px;
 }
 
-.new__message > .x {
-  font-weight: bold;
-  cursor: pointer;
+#field {
+  width: 300px;
+  height: 200px;
+  padding-left: 20px;
 }
 
-.new__message p {
-  margin-left: 5px;
-}
-
-.list__message {
-  border: 1px solid black;
-  padding: 5px;
-  padding-left: 10px;
-  margin-bottom: 25px;
-  height: 100px;
-}
-
-.list__message p {
-  padding-left: 15px;
-}
-
-.list__x {
+.not-show {
   position: relative;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-.list__x::before {
+.not-show::before {
   content: 'x';
   width: 10px;
   height: 10px;
   position: absolute;
   top: 0;
-  left: 2px;
+  left: -15px;
 }
 
 .input__message {
